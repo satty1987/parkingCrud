@@ -1,0 +1,26 @@
+<div class="container-fluid">
+  <div class="row available">
+    <div class="col-12  mt-3 mb-3">
+      <mat-card class="p-5 mat-card ">
+          <div class="row" >
+        <div class="col-sm lead" >Total Avilability : {{totalParking}}</div>
+        <div class="col-sm lead" >Available Avilability : {{availableParking}}</div>
+          <div class="col-sm lead" >Allocated Avilability : {{alocatedParking}}</div>
+          </div>
+      </mat-card>
+
+    </div>
+
+    <div class="col-2  " *ngFor="let item of dataList ">
+      <div class=" text-white text-center  p-3  mb-4"
+        [ngClass]="item.parking_Available ?  'bg-success': 'bg-secondary'">
+
+        <p class="lead"> {{item.towerName}}</p>
+
+        <i class="fas" [ngClass]="item.parking_Available ?  'fa-taxi': 'fa-times-circle '"></i>
+        <p> {{item.parkingSlot}}</p>
+
+      </div>
+    </div>
+  </div>
+</div>

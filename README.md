@@ -25,3 +25,18 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Docker Reference
+
+[Docker Reference](https://medium.com/@DenysVuika/your-angular-apps-as-docker-containers-471f570a7f2)ç
+
+`docker login`
+According to the docs:
+
+##You need to include the namespace for Docker Hub to associate it with your account.The namespace is the same as your Docker Hub account name.You need to rename the image to YOUR_DOCKERHUB_NAME/docker-whale.So, this means you have to tag your image before pushing:
+
+`docker tag firstimage YOUR_DOCKERHUB_NAME/firstimage`
+
+### and then you should be able to push it.
+
+`docker push YOUR_DOCKERHUB_NAME/firstimage`

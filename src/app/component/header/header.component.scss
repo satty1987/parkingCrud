@@ -1,0 +1,16 @@
+.navbar, .alert {
+    border-radius: 0;
+}
+.subnav-item{
+list-style: none;
+display: inline-block;
+}
+.search{
+    background: #e91f63;
+    border: none;
+    color: #fff;
+    width: 100%;
+}
+.search::placeholder{
+    color: #fff;
+}

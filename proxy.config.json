@@ -1,0 +1,14 @@
+{
+  "/oauth2/default/v1/*": {
+    "target": "https://dev-337333.oktapreview.com",
+    "changeOrigin": true,
+    "secure": false,
+    "logLevel": "debug"
+  },
+  "/oauth/v1/*": {
+    "target": "https://api.t-mobile.com",
+    "changeOrigin": true,
+    "secure": false,
+    "logLevel": "debug"
+  }
+}

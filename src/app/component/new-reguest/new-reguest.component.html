@@ -1,0 +1,60 @@
+<div class="container-fluid">
+  <div class="row">
+      <div class="col-6 offset-3 mt-5">
+
+          <mat-card class="p-5">
+             
+
+              <h2>{{name}}</h2>
+              <form class="example-form" [formGroup]="regiForm" (ngSubmit)="onFormSubmit(regiForm.value)">
+                  <mat-form-field class="example-full-width">
+                      <input matInput placeholder="Employee Code" formControlName="employeeCode">
+                  </mat-form-field>
+                  <mat-form-field>
+                    <mat-label>Employee Band</mat-label>
+                    <mat-select formControlName="employeeBand">
+                      <mat-option *ngFor="let item of employeeBands" [value]="item">
+                        {{item}}
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                  
+
+                  <mat-form-field>
+                    <input matInput [matDatepicker]="pickerStart" [min]="todayDate"  formControlName="startDate" placeholder="Start Date">
+                    <mat-datepicker-toggle matSuffix [for]="pickerStart"></mat-datepicker-toggle>
+                    <mat-datepicker touchUi #pickerStart></mat-datepicker>
+                  </mat-form-field>
+
+                  <mat-form-field>
+                    <input matInput [matDatepicker]="pickerEnd" [min]="todayDate"  formControlName="endDate" placeholder="End Date">
+                    <mat-datepicker-toggle matSuffix [for]="pickerEnd"></mat-datepicker-toggle>
+                    <mat-datepicker touchUi #pickerEnd></mat-datepicker>
+                  </mat-form-field>
+
+
+                  <!-- <mat-form-field>
+                    <mat-label>Request Type</mat-label touchUi>
+                    <mat-select formControlName="prefferTowerValue">
+                      <mat-option *ngFor="let item of request" [value]="item">
+                        {{item}}
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field> -->
+
+                  <mat-form-field>
+                    <mat-label>Preffer Tower</mat-label>
+                    <mat-select formControlName="prefferTowerValue">
+                      <mat-option *ngFor="let item of prefferTower" [value]="item.value">
+                        {{item.name}}
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                  <button mat-raised-button class="btn btn-primary" [disabled]="!regiForm.valid">
+                      Submit Request
+                  </button>
+              </form>
+          </mat-card>
+      </div>
+  </div>
+</div>

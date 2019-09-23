@@ -1,0 +1,43 @@
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+  
+        <div class="card">
+     
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table">
+                <thead class="text-primary">
+                  <tr>
+                    <!---->
+                    <th class="ng-star-inserted">Sap Id</th>
+                    <th class="ng-star-inserted">Start Date</th>
+                    <th class="ng-star-inserted">End Date</th>
+                    <th class="ng-star-inserted">Status</th>
+                    <th class="ng-star-inserted">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!---->
+                  <tr class="ng-star-inserted" *ngFor="let item of dataList">
+                    <td>{{item.employeeCode}}</td>
+                    <td>{{item.startDate | date}}</td>
+                    <td>{{item.endDate | date}}</td>
+                    <td>{{item.status}}</td>
+                    <td> 
+<p><i  class="material-icons p-2" (click)="approve(item)" *ngIf="item.status =='pending'">done</i>  
+  <i  class="fas fa-trash-alt fa-2x" (click)="reject(item)"></i></p>
+
+
+                    </td>
+                  </tr>
+                 
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </div>

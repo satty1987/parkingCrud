@@ -1,1 +1,220 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.main {
+    background: #fff;
+  
+}
+
+
+.info .icon>i {
+    font-size: 3.85rem;
+}
+// *{
+//     box-shadow: none !important;
+// }
+.landing-header .motto {
+    padding-top: 8%;
+    text-align: left;
+    z-index: 3;
+}
+.landing-header {
+    background-size: cover;
+    min-height: 400px;
+
+}
+
+
+.text-black {
+    color: #000
+}
+
+.text-white {
+    color: #fff
+}
+
+.text-white-smoke {
+    color: #f5f5f5
+}
+
+.text-brand-magenta,.text-magenta,.text-primary {
+    color: #e20074
+}
+
+.text-dark-magenta {
+    color: #ba0060
+}
+
+.text-very-dark-magenta {
+    color: #a10053
+}
+
+.text-gray {
+    color: #767676
+}
+
+.text-gray-dark {
+    color: #5a5a5a
+}
+
+.text-gray-darker {
+    color: #323232
+}
+
+.text-gray-light {
+    color: #bebebe
+}
+
+.text-gray-lighter {
+    color: #ddd
+}
+
+.text-gray-light-1 {
+    color: #ccc
+}
+
+.text-gray-light-2 {
+    color: #e6e6e6
+}
+
+.text-green-true {
+    color: #07ac0f
+}
+
+.text-green-light {
+    color: #8dc63f
+}
+
+.text-green-medium {
+    color: #39b54a
+}
+
+.text-green {
+    color: #09B119
+}
+
+.text-error,.text-red {
+    color: red
+}
+
+.text-pinkish-red {
+    color: #ed1c24
+}
+
+.text-squash {
+    color: #f7941d
+}
+
+.text-bright-yellow {
+    color: #fff200
+}
+
+.bg-black {
+    background-color: #000
+}
+
+.bg-white {
+    background-color: #fff
+}
+
+.bg-white-smoke {
+    background-color: #f5f5f5
+}
+
+.bg-brand-magenta,.bg-magenta {
+    background-color: #e20074
+}
+
+.bg-dark-magenta {
+    background-color: #ba0060
+}
+
+.bg-very-dark-magenta {
+    background-color: #a10053
+}
+
+.bg-gray {
+    background-color: #767676
+}
+
+.bg-gray-dark {
+    background-color: #5a5a5a
+}
+
+.bg-gray-darker {
+    background-color: #323232
+}
+
+.bg-gray-light {
+    background-color: #bebebe
+}
+
+.bg-gray-lighter {
+    background-color: #ddd
+}
+
+.bg-gray-light-1 {
+    background-color: #ccc
+}
+
+.bg-gray-light-2 {
+    background-color: #e6e6e6
+}
+
+.bg-green-true {
+    background-color: #07ac0f
+}
+
+.bg-green-light {
+    background-color: #8dc63f
+}
+
+.bg-green-medium {
+    background-color: #39b54a
+}
+
+.bg-green {
+    background-color: #09B119
+}
+
+.bg-red {
+    background-color: red
+}
+
+.bg-pinkish-red {
+    background-color: #ed1c24
+}
+
+.bg-squash {
+    background-color: #f7941d
+}
+
+.bg-bright-yellow {
+    background-color: #fff200
+}
+
+.bg-cart {
+    background-color: #f3f3f3
+}
+
+.bg-cart-boxes {
+    background-color: #fafafa
+}
+
+.bg-my-primary{
+    background: #e91e63 !important;
+}
+.mb-100{
+    margin-bottom:100px !important;
+}
+.mt-100{
+    margin-top:100px !important;
+}
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
